@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awesome Sora 2 提示词集合</title>
+    <title>Awesome Sora 2 提示词集合 ✨</title>
     <meta name="description" content="精选的 OpenAI Sora 和 Sora 2 视频生成模型高质量提示词集合">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -14,38 +15,43 @@
         }
 
         :root {
-            --primary-color: #6366f1;
-            --secondary-color: #8b5cf6;
-            --accent-color: #ec4899;
-            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --primary: #7c3aed;
+            --primary-dark: #6d28d9;
+            --secondary: #ec4899;
+            --accent: #f59e0b;
+            --success: #10b981;
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            --bg-gradient-2: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
             --card-bg: #ffffff;
-            --text-primary: #1f2937;
-            --text-secondary: #6b7280;
-            --border-color: #e5e7eb;
-            --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.15);
+            --text-primary: #0f172a;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+            --shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.15);
+            --shadow-xl: 0 30px 80px rgba(0, 0, 0, 0.2);
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
-            line-height: 1.6;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            line-height: 1.7;
             color: var(--text-primary);
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            background: #f8fafc;
             min-height: 100vh;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1280px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 24px;
         }
 
+        /* Header Styles */
         header {
             background: var(--bg-gradient);
             color: white;
-            padding: 60px 0;
+            padding: 100px 0 80px;
             text-align: center;
-            box-shadow: var(--shadow);
             position: relative;
             overflow: hidden;
         }
@@ -57,8 +63,15 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
-            opacity: 0.3;
+            background:
+                radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(255,255,255,0.1) 0%, transparent 50%);
+            animation: pulse 8s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
         }
 
         header .container {
@@ -67,73 +80,108 @@
         }
 
         h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
-            font-weight: 700;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            font-size: 4rem;
+            margin-bottom: 24px;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            animation: fadeInUp 0.8s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .subtitle {
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             opacity: 0.95;
-            max-width: 800px;
-            margin: 0 auto;
+            max-width: 900px;
+            margin: 0 auto 32px;
+            font-weight: 400;
+            line-height: 1.8;
+            animation: fadeInUp 0.8s ease 0.2s backwards;
         }
 
         .badges {
-            margin-top: 20px;
+            margin-top: 32px;
             display: flex;
-            gap: 10px;
+            gap: 12px;
             justify-content: center;
             flex-wrap: wrap;
+            animation: fadeInUp 0.8s ease 0.4s backwards;
         }
 
         .badge {
-            display: inline-block;
-            padding: 8px 16px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 20px;
-            font-size: 0.9rem;
-            backdrop-filter: blur(10px);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 30px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            backdrop-filter: blur(20px);
+            transition: all 0.3s ease;
         }
 
+        .badge:hover {
+            background: rgba(255, 255, 255, 0.35);
+            transform: translateY(-2px);
+        }
+
+        /* Navigation */
         nav {
-            background: white;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
             padding: 20px 0;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
             position: sticky;
             top: 0;
             z-index: 100;
+            border-bottom: 1px solid var(--border-color);
         }
 
         nav ul {
             list-style: none;
             display: flex;
             justify-content: center;
-            gap: 30px;
+            gap: 40px;
             flex-wrap: wrap;
         }
 
         nav a {
             text-decoration: none;
             color: var(--text-primary);
-            font-weight: 500;
-            transition: color 0.3s;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s;
             position: relative;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
         }
 
         nav a:hover {
-            color: var(--primary-color);
+            color: var(--primary);
         }
 
         nav a::after {
             content: '';
             position: absolute;
-            bottom: -5px;
+            bottom: -8px;
             left: 0;
             width: 0;
-            height: 2px;
-            background: var(--primary-color);
+            height: 3px;
+            background: var(--primary);
+            border-radius: 2px;
             transition: width 0.3s;
         }
 
@@ -141,21 +189,24 @@
             width: 100%;
         }
 
+        /* Main Content */
         main {
-            padding: 60px 0;
+            padding: 80px 0;
         }
 
         .section {
-            margin-bottom: 80px;
+            margin-bottom: 100px;
         }
 
         .section-title {
-            font-size: 2.5rem;
-            margin-bottom: 30px;
+            font-size: 3rem;
+            margin-bottom: 20px;
             color: var(--text-primary);
             text-align: center;
+            font-weight: 800;
+            letter-spacing: -0.02em;
             position: relative;
-            padding-bottom: 15px;
+            padding-bottom: 20px;
         }
 
         .section-title::after {
@@ -164,190 +215,334 @@
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
+            width: 100px;
+            height: 5px;
             background: var(--bg-gradient);
-            border-radius: 2px;
+            border-radius: 3px;
         }
 
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+            margin-bottom: 60px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Card Grid */
         .card-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 32px;
+            margin-top: 60px;
         }
 
         .card {
             background: var(--card-bg);
-            border-radius: 15px;
-            padding: 30px;
+            border-radius: 24px;
+            padding: 40px;
             box-shadow: var(--shadow);
-            transition: all 0.3s;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             border: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--bg-gradient);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
         }
 
         .card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-hover);
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+            border-color: transparent;
+        }
+
+        .card:hover::before {
+            transform: scaleX(1);
         }
 
         .card-icon {
-            font-size: 3rem;
-            margin-bottom: 20px;
+            font-size: 3.5rem;
+            margin-bottom: 24px;
             display: block;
             background: var(--bg-gradient);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            filter: drop-shadow(0 4px 10px rgba(124, 58, 237, 0.2));
         }
 
         .card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
+            font-size: 1.75rem;
+            margin-bottom: 16px;
             color: var(--text-primary);
+            font-weight: 700;
         }
 
         .card p {
             color: var(--text-secondary);
             line-height: 1.8;
+            font-size: 1.05rem;
         }
 
         .card ul {
-            margin-top: 15px;
-            padding-left: 20px;
+            margin-top: 20px;
+            padding-left: 24px;
         }
 
         .card li {
-            margin: 8px 0;
+            margin: 12px 0;
             color: var(--text-secondary);
+            font-size: 1.05rem;
         }
 
+        /* Buttons */
         .btn {
-            display: inline-block;
-            padding: 12px 30px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 32px;
             background: var(--bg-gradient);
             color: white;
             text-decoration: none;
-            border-radius: 25px;
+            border-radius: 50px;
             font-weight: 600;
-            transition: all 0.3s;
-            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(124, 58, 237, 0.3);
+            border: none;
+            cursor: pointer;
         }
 
         .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(124, 58, 237, 0.4);
         }
 
         .btn-secondary {
             background: white;
-            color: var(--primary-color);
-            border: 2px solid var(--primary-color);
-            box-shadow: none;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+            box-shadow: 0 4px 15px rgba(124, 58, 237, 0.1);
         }
 
         .btn-secondary:hover {
-            background: var(--primary-color);
+            background: var(--primary);
             color: white;
         }
 
+        /* Features Grid */
         .features {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 32px;
+            margin-top: 60px;
         }
 
         .feature {
             text-align: center;
-            padding: 20px;
+            padding: 32px 24px;
+            background: rgba(124, 58, 237, 0.03);
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .feature:hover {
+            background: rgba(124, 58, 237, 0.08);
+            transform: translateY(-5px);
         }
 
         .feature-icon {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-            color: var(--primary-color);
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+            filter: grayscale(0.3);
+            transition: all 0.3s ease;
         }
 
+        .feature:hover .feature-icon {
+            filter: grayscale(0);
+            transform: scale(1.1);
+        }
+
+        .feature h4 {
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .feature p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        /* Insights Section */
         .insights {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 50px;
-            border-radius: 20px;
+            background: var(--bg-gradient);
+            padding: 60px;
+            border-radius: 30px;
             color: white;
-            margin-top: 40px;
+            margin-top: 60px;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .insights::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
         }
 
         .insights h3 {
-            font-size: 2rem;
-            margin-bottom: 25px;
+            font-size: 2.5rem;
+            margin-bottom: 32px;
             text-align: center;
+            font-weight: 800;
+            position: relative;
+            z-index: 1;
         }
 
         .insights-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            position: relative;
+            z-index: 1;
         }
 
         .insight-item {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.15);
+            padding: 24px;
+            border-radius: 16px;
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        .insight-item:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateX(8px);
         }
 
         .insight-item i {
-            margin-right: 10px;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+            margin-top: 4px;
         }
 
+        /* CTA Section */
+        .cta-section {
+            text-align: center;
+            padding: 80px 60px;
+            background: white;
+            border-radius: 30px;
+            margin: 80px 0;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border-color);
+        }
+
+        .cta-section h2 {
+            font-size: 3rem;
+            margin-bottom: 24px;
+            background: var(--bg-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 800;
+        }
+
+        .cta-section p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Footer */
         footer {
-            background: #1f2937;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
             color: white;
-            padding: 40px 0;
+            padding: 60px 0 40px;
             text-align: center;
         }
 
         footer a {
-            color: var(--primary-color);
+            color: #a78bfa;
             text-decoration: none;
+            transition: color 0.3s;
         }
 
         footer a:hover {
-            text-decoration: underline;
+            color: #c4b5fd;
         }
 
+        /* Language Switch */
         .lang-switch {
             position: fixed;
-            top: 20px;
-            right: 20px;
+            top: 24px;
+            right: 24px;
             z-index: 1000;
         }
 
         .lang-switch a {
-            padding: 10px 20px;
+            padding: 12px 24px;
             background: white;
-            border-radius: 20px;
+            border-radius: 50px;
             text-decoration: none;
             color: var(--text-primary);
             box-shadow: var(--shadow);
             transition: all 0.3s;
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            border: 1px solid var(--border-color);
         }
 
         .lang-switch a:hover {
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-hover);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary);
+            color: var(--primary);
         }
 
+        /* Responsive */
         @media (max-width: 768px) {
             h1 {
-                font-size: 2rem;
+                font-size: 2.5rem;
             }
 
             .section-title {
-                font-size: 1.8rem;
+                font-size: 2rem;
             }
 
             .card-grid {
@@ -356,44 +551,44 @@
 
             nav ul {
                 flex-direction: column;
-                gap: 15px;
+                gap: 20px;
             }
 
             .insights {
-                padding: 30px 20px;
+                padding: 40px 24px;
+            }
+
+            .cta-section {
+                padding: 60px 24px;
+            }
+
+            .cta-section h2 {
+                font-size: 2rem;
+            }
+
+            .lang-switch {
+                top: 16px;
+                right: 16px;
             }
         }
 
-        .cta-section {
-            text-align: center;
-            padding: 60px 0;
-            background: white;
-            border-radius: 20px;
-            margin: 40px 0;
-            box-shadow: var(--shadow);
+        /* Animations */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
         }
 
-        .cta-section h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            background: var(--bg-gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .cta-buttons {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            margin-top: 30px;
-            flex-wrap: wrap;
+        .floating {
+            animation: float 6s ease-in-out infinite;
         }
     </style>
 </head>
 <body>
     <div class="lang-switch">
-        <a href="README.md">English</a>
+        <a href="README_CN.md">
+            <i class="fas fa-globe"></i>
+            English
+        </a>
     </div>
 
     <header>
@@ -425,11 +620,14 @@
         <div class="container">
             <section id="about" class="section">
                 <h2 class="section-title">🎬 Sora 是什么?</h2>
+                <p class="section-subtitle">
+                    OpenAI 最先进的文本生成视频 AI 模型，带来革命性的视频创作体验
+                </p>
                 <div class="card">
-                    <p style="font-size: 1.1rem; line-height: 1.8;">
-                        Sora 是 OpenAI 的文本生成视频模型，它就像一个<strong>"世界模拟器"</strong>，能够根据文本提示创建逼真和富有想象力的视频。
+                    <p style="font-size: 1.15rem; line-height: 1.9; margin-bottom: 32px;">
+                        Sora 是 OpenAI 的文本生成视频模型，它就像一个<strong style="color: var(--primary);">"世界模拟器"</strong>，能够根据文本提示创建逼真和富有想象力的视频。
                     </p>
-                    <h3 style="margin-top: 30px; color: var(--primary-color);">Sora 2 新功能 (2025年9月发布)</h3>
+                    <h3 style="margin-top: 40px; color: var(--primary); font-size: 1.75rem; margin-bottom: 32px;">Sora 2 新功能 (2025年9月发布)</h3>
                     <div class="features">
                         <div class="feature">
                             <div class="feature-icon">🔊</div>
@@ -457,7 +655,7 @@
 
             <section id="principles" class="section">
                 <h2 class="section-title">🎯 核心原则</h2>
-                <h3 style="text-align: center; margin-bottom: 30px; font-size: 1.8rem;">有效 Sora 提示词的五大支柱</h3>
+                <p class="section-subtitle">掌握这五大支柱，创作出令人惊叹的 Sora 视频</p>
                 <div class="card-grid">
                     <div class="card">
                         <span class="card-icon">👤</span>
@@ -513,25 +711,25 @@
 
                 <div class="insights">
                     <h3>💡 "世界模拟器"范式</h3>
-                    <p style="text-align: center; font-size: 1.1rem; margin-bottom: 30px;">
+                    <p style="text-align: center; font-size: 1.2rem; margin-bottom: 40px; opacity: 0.95;">
                         Sora 不仅仅是生成视频——它在模拟微型的、自洽的世界
                     </p>
                     <div class="insights-grid">
                         <div class="insight-item">
                             <i class="fas fa-cog"></i>
-                            提供初始条件和物理定律
+                            <span>提供初始条件和物理定律</span>
                         </div>
                         <div class="insight-item">
                             <i class="fas fa-link"></i>
-                            指定物体之间如何相互作用
+                            <span>指定物体之间如何相互作用</span>
                         </div>
                         <div class="insight-item">
                             <i class="fas fa-sun"></i>
-                            定义环境属性(重力、光照、反射)
+                            <span>定义环境属性(重力、光照、反射)</span>
                         </div>
                         <div class="insight-item">
                             <i class="fas fa-magic"></i>
-                            隐式或显式地引导物理规则
+                            <span>隐式或显式地引导物理规则</span>
                         </div>
                     </div>
                 </div>
@@ -539,26 +737,33 @@
 
             <section id="prompts" class="section">
                 <h2 class="section-title">📚 提示词集合</h2>
+                <p class="section-subtitle">从官方示例到社区爆款，应有尽有</p>
                 <div class="card-grid">
                     <div class="card">
                         <span class="card-icon">⭐</span>
                         <h3>官方示例提示词</h3>
-                        <p>OpenAI 官方发布的"黄金标准"演示案例，包括东京街头、长毛猛犸象、宇航员冒险等经典示例。</p>
-                        <a href="prompts/official-prompts.md" class="btn" style="margin-top: 20px;">查看官方提示词</a>
+                        <p style="margin-bottom: 24px;">OpenAI 官方发布的"黄金标准"演示案例，包括东京街头、长毛猛犸象、宇航员冒险等经典示例。</p>
+                        <a href="prompts/official-prompts.md" class="btn">
+                            <i class="fas fa-arrow-right"></i>
+                            查看官方提示词
+                        </a>
                     </div>
                     <div class="card">
                         <span class="card-icon">🔥</span>
                         <h3>社区爆款提示词</h3>
-                        <p>从社交媒体高互动帖子中精选的 32+ 个爆款提示词，涵盖动漫、广告、幽默等多种风格。</p>
-                        <a href="prompts/sora2-viral-prompts.md" class="btn" style="margin-top: 20px;">查看爆款提示词</a>
+                        <p style="margin-bottom: 24px;">从社交媒体高互动帖子中精选的 32+ 个爆款提示词，涵盖动漫、广告、幽默等多种风格。</p>
+                        <a href="prompts/sora2-viral-prompts.md" class="btn">
+                            <i class="fas fa-fire"></i>
+                            查看爆款提示词
+                        </a>
                     </div>
                     <div class="card">
                         <span class="card-icon">📁</span>
                         <h3>分类提示词集合</h3>
-                        <p>按主题分类整理的提示词库：超写实、超现实、角色叙事、风格化动画、历史档案、电影风格。</p>
-                        <div style="margin-top: 20px;">
-                            <a href="prompts/hyperrealism-landscapes.md" class="btn btn-secondary" style="margin: 5px;">超写实</a>
-                            <a href="prompts/cinematic-styles.md" class="btn btn-secondary" style="margin: 5px;">电影风格</a>
+                        <p style="margin-bottom: 24px;">按主题分类整理的提示词库：超写实、超现实、角色叙事、风格化动画、历史档案、电影风格。</p>
+                        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                            <a href="prompts/hyperrealism-landscapes.md" class="btn btn-secondary">超写实</a>
+                            <a href="prompts/cinematic-styles.md" class="btn btn-secondary">电影风格</a>
                         </div>
                     </div>
                 </div>
@@ -566,76 +771,75 @@
 
             <section id="guides" class="section">
                 <h2 class="section-title">📖 提示词工程指南</h2>
+                <p class="section-subtitle">从零基础到专业创作者的完整学习路径</p>
                 <div class="card-grid">
                     <div class="card">
                         <span class="card-icon">🚀</span>
                         <h3>入门指南</h3>
-                        <p>学习基本原则，创建你的第一个 Sora 提示词</p>
-                        <a href="guides/getting-started.md" class="btn" style="margin-top: 15px;">开始学习</a>
+                        <p style="margin-bottom: 20px;">学习基本原则，创建你的第一个 Sora 提示词</p>
+                        <a href="guides/getting-started.md" class="btn">开始学习</a>
                     </div>
                     <div class="card">
                         <span class="card-icon">🎯</span>
                         <h3>五大支柱框架</h3>
-                        <p>深度解析提示词创作的核心框架</p>
-                        <a href="guides/five-pillars.md" class="btn" style="margin-top: 15px;">深入学习</a>
+                        <p style="margin-bottom: 20px;">深度解析提示词创作的核心框架</p>
+                        <a href="guides/five-pillars.md" class="btn">深入学习</a>
                     </div>
                     <div class="card">
                         <span class="card-icon">📹</span>
                         <h3>电影化技巧</h3>
-                        <p>掌握镜头角度、运动和取景的专业技巧</p>
-                        <a href="guides/cinematic-techniques.md" class="btn" style="margin-top: 15px;">查看技巧</a>
+                        <p style="margin-bottom: 20px;">掌握镜头角度、运动和取景的专业技巧</p>
+                        <a href="guides/cinematic-techniques.md" class="btn">查看技巧</a>
                     </div>
                     <div class="card">
                         <span class="card-icon">🎨</span>
                         <h3>风格复制</h3>
-                        <p>学习模仿著名导演和艺术家的独特风格</p>
-                        <a href="guides/style-replication.md" class="btn" style="margin-top: 15px;">探索风格</a>
+                        <p style="margin-bottom: 20px;">学习模仿著名导演和艺术家的独特风格</p>
+                        <a href="guides/style-replication.md" class="btn">探索风格</a>
                     </div>
                     <div class="card">
                         <span class="card-icon">⚡</span>
                         <h3>物理与运动</h3>
-                        <p>理解和运用隐式物理指令</p>
-                        <a href="guides/physics-motion.md" class="btn" style="margin-top: 15px;">了解详情</a>
+                        <p style="margin-bottom: 20px;">理解和运用隐式物理指令</p>
+                        <a href="guides/physics-motion.md" class="btn">了解详情</a>
                     </div>
                     <div class="card">
                         <span class="card-icon">🔊</span>
                         <h3>Sora 2 音频指南</h3>
-                        <p>掌握同步音频生成的技巧和方法</p>
-                        <a href="guides/audio-guide.md" class="btn" style="margin-top: 15px;">查看指南</a>
+                        <p style="margin-bottom: 20px;">掌握同步音频生成的技巧和方法</p>
+                        <a href="guides/audio-guide.md" class="btn">查看指南</a>
                     </div>
                 </div>
             </section>
 
             <section id="insights" class="section">
                 <h2 class="section-title">📊 提示词分析洞察</h2>
-                <p style="text-align: center; font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 30px;">
-                    基于对 32+ 个社区实验的深度分析
-                </p>
+                <p class="section-subtitle">基于对 32+ 个社区实验的深度分析</p>
                 <div class="insights">
                     <div class="insights-grid">
                         <div class="insight-item">
                             <i class="fas fa-check-circle"></i>
-                            <strong>120 词以下的提示词</strong>在创意内容方面表现更好
+                            <span><strong>120 词以下的提示词</strong>在创意内容方面表现更好</span>
                         </div>
                         <div class="insight-item">
                             <i class="fas fa-check-circle"></i>
-                            <strong>具体的镜头指令</strong>显著提升视觉冲击力
+                            <span><strong>具体的镜头指令</strong>显著提升视觉冲击力</span>
                         </div>
                         <div class="insight-item">
                             <i class="fas fa-check-circle"></i>
-                            <strong>动物主题提示词</strong>成功率高
+                            <span><strong>动物主题提示词</strong>成功率高</span>
                         </div>
                         <div class="insight-item">
                             <i class="fas fa-check-circle"></i>
-                            <strong>感官细节</strong>(纹理、光照、反射)增强真实感
+                            <span><strong>感官细节</strong>(纹理、光照、反射)增强真实感</span>
                         </div>
                         <div class="insight-item">
                             <i class="fas fa-exclamation-triangle"></i>
-                            <strong>过于复杂的物理</strong>可能导致伪影
+                            <span><strong>过于复杂的物理</strong>可能导致伪影</span>
                         </div>
                         <div class="insight-item">
                             <i class="fas fa-exclamation-triangle"></i>
-                            <strong>模糊的描述</strong>导致不一致的结果
+                            <span><strong>模糊的描述</strong>导致不一致的结果</span>
                         </div>
                     </div>
                 </div>
@@ -643,13 +847,22 @@
 
             <div class="cta-section">
                 <h2>🤝 加入我们的社区</h2>
-                <p style="font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 20px;">
+                <p>
                     我们欢迎所有形式的贡献！无论是新的提示词、分析还是改进建议
                 </p>
                 <div class="cta-buttons">
-                    <a href="CONTRIBUTING.md" class="btn">📝 贡献指南</a>
-                    <a href="https://github.com/zhangchenchen/awesome-sora2-prompt" class="btn btn-secondary">⭐ GitHub 仓库</a>
-                    <a href="https://github.com/zhangchenchen/awesome-sora2-prompt/issues" class="btn btn-secondary">🐛 报告问题</a>
+                    <a href="CONTRIBUTING.md" class="btn">
+                        <i class="fas fa-edit"></i>
+                        贡献指南
+                    </a>
+                    <a href="https://github.com/zhangchenchen/awesome-sora2-prompt" class="btn btn-secondary">
+                        <i class="fab fa-github"></i>
+                        GitHub 仓库
+                    </a>
+                    <a href="https://github.com/zhangchenchen/awesome-sora2-prompt/issues" class="btn btn-secondary">
+                        <i class="fas fa-bug"></i>
+                        报告问题
+                    </a>
                 </div>
             </div>
         </div>
@@ -657,42 +870,46 @@
 
     <footer>
         <div class="container">
-            <p style="margin-bottom: 15px; font-size: 1.1rem;">
-                <strong>Awesome Sora 2 提示词集合</strong>
+            <p style="margin-bottom: 16px; font-size: 1.25rem; font-weight: 700;">
+                Awesome Sora 2 提示词集合
             </p>
-            <p style="margin-bottom: 20px; opacity: 0.8;">
+            <p style="margin-bottom: 24px; opacity: 0.8; font-size: 1.05rem;">
                 由社区维护 | 最后更新: 2025年10月
             </p>
-            <p>
+            <p style="margin-bottom: 32px;">
                 <a href="LICENSE">MIT License</a> |
                 <a href="https://github.com/zhangchenchen/awesome-sora2-prompt">GitHub</a> |
-                <a href="README_CN.md">完整文档</a>
+                <a href="README.md">完整文档</a>
             </p>
-            <p style="margin-top: 30px; opacity: 0.6; font-size: 0.9rem;">
+            <p style="opacity: 0.6; font-size: 0.95rem;">
                 Made with ❤️ by the Sora community
             </p>
         </div>
     </footer>
 
     <script>
-        // Smooth scrolling for navigation links
+        // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
                     });
                 }
             });
         });
 
-        // Add animation on scroll
+        // Intersection Observer for animations
         const observerOptions = {
             threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
+            rootMargin: '0px 0px -100px 0px'
         };
 
         const observer = new IntersectionObserver((entries) => {
@@ -704,11 +921,21 @@
             });
         }, observerOptions);
 
+        // Observe all cards and features
         document.querySelectorAll('.card, .feature, .insight-item').forEach(el => {
             el.style.opacity = '0';
-            el.style.transform = 'translateY(20px)';
+            el.style.transform = 'translateY(30px)';
             el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(el);
+        });
+
+        // Add parallax effect to header
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const header = document.querySelector('header');
+            if (header) {
+                header.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
         });
     </script>
 </body>

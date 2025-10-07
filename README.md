@@ -1,471 +1,471 @@
-# Awesome Sora 2 Prompts ✨
+# Awesome Sora 2 提示词集合 ✨
 
-> A curated collection of high-quality prompts for OpenAI's Sora and Sora 2 video generation models, with deep analysis and practical guidance for prompt engineering.
+> 精选的 OpenAI Sora 和 Sora 2 视频生成模型高质量提示词集合，包含深度分析和提示词工程实战指南。
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## 📖 Table of Contents
+## 📖 目录
 
-- [What is Sora?](#what-is-sora)
-- [Core Principles](#core-principles)
-- [Prompt Collections](#prompt-collections)
-- [Prompt Engineering Guide](#prompt-engineering-guide)
-- [Contributing](#contributing)
-- [Resources](#resources)
+- [Sora 是什么?](#sora-是什么)
+- [核心原则](#核心原则)
+- [提示词集合](#提示词集合)
+- [提示词工程指南](#提示词工程指南)
+- [贡献指南](#贡献指南)
+- [相关资源](#相关资源)
 
-## 🎬 What is Sora?
+## 🎬 Sora 是什么?
 
-Sora is OpenAI's text-to-video generation model that acts as a "world simulator," capable of creating realistic and imaginative videos from text prompts. **Sora 2**, released on September 30, 2025, introduces:
+Sora 是 OpenAI 的文本生成视频模型,它就像一个"世界模拟器",能够根据文本提示创建逼真和富有想象力的视频。**Sora 2** 于 2025 年 9 月 30 日发布,新增功能包括:
 
-- **Synchronized Audio**: Natural sound effects and dialogue generation
-- **Enhanced Physics**: Improved realism in motion and object interactions
-- **Self-Insertion Cameos**: Ability to insert custom avatars
-- **Advanced Controllability**: More precise camera work and cinematic control
+- **同步音频**: 自然的音效和对话生成
+- **增强物理效果**: 改进的运动和物体交互真实感
+- **自定义头像**: 插入自定义虚拟形象的能力
+- **高级可控性**: 更精确的镜头运动和电影化控制
 
-## 🎯 Core Principles
+## 🎯 核心原则
 
-### The Five Pillars of Effective Sora Prompts
+### 有效 Sora 提示词的五大支柱
 
-Based on analysis of official and viral prompts, every effective Sora prompt should include:
+基于对官方和爆款提示词的分析,每个有效的 Sora 提示词都应包含:
 
-1. **Subject & Character**: Define WHO or WHAT (appearance, clothing, emotions)
-2. **Action & Motion**: Describe WHAT IS HAPPENING (verbs, movements, interactions)
-3. **Environment & Setting**: Establish WHERE and WHEN (location, time, atmosphere)
-4. **Cinematic Framing**: Define HOW IT'S SEEN (camera angles, movements, shots)
-5. **Aesthetic & Style**: Determine LOOK and FEEL (photorealistic, animated, film stock)
+1. **主体与角色**: 定义「谁」或「什么」(外观、服装、情绪)
+2. **动作与运动**: 描述「发生什么」(动词、移动、互动)
+3. **环境与场景**: 确定「何地」和「何时」(位置、时间、氛围)
+4. **电影化构图**: 定义「如何呈现」(镜头角度、运动、取景)
+5. **美学与风格**: 确定「外观和感觉」(写实风格、动画风格、胶片质感)
 
-### The "World Simulator" Paradigm
+### "世界模拟器"范式
 
-Sora isn't just generating videos—it's simulating miniature, self-consistent worlds. Effective prompts should:
+Sora 不仅仅是生成视频——它在模拟微型的、自洽的世界。有效的提示词应该:
 
-- Provide initial conditions and physical laws
-- Specify how objects interact with each other
-- Define environmental properties (gravity, lighting, reflections)
-- Guide the physics implicitly or explicitly
+- 提供初始条件和物理定律
+- 指定物体之间如何相互作用
+- 定义环境属性(重力、光照、反射)
+- 隐式或显式地引导物理规则
 
-### Prompt Length Strategy
+### 提示词长度策略
 
-- **Creative Exploration** (< 120 words): Best for imaginative, story-driven scenes
-- **Precision Execution** (> 200 words): Best for cinematic control and technical accuracy
+- **创意探索**(< 120 词): 最适合富有想象力的故事场景
+- **精确执行**(> 200 词): 最适合电影控制和技术精度
 
-## 📚 Prompt Collections
+## 📚 提示词集合
 
-### Official OpenAI Showcase Prompts
+### OpenAI 官方示例提示词
 
-These represent the "gold standard" - official demonstrations of Sora's capabilities:
+这些代表了"黄金标准" - Sora 能力的官方演示:
 
 <table>
 <thead>
 <tr>
-<th>Name</th>
-<th>Prompt Preview</th>
-<th align="center">Video</th>
-<th align="center">Analysis</th>
+<th>名称</th>
+<th>提示词预览</th>
+<th align="center">视频</th>
+<th align="center">分析</th>
 </tr>
 </thead>
 <tbody>
 
 <tr>
-<td><strong>🌃 Tokyo Walk</strong></td>
-<td>"A stylish woman walks down a Tokyo street filled with warm glowing neon..."</td>
+<td><strong>🌃 东京街头漫步</strong></td>
+<td>一位时髦的女士走在东京街头,街道上充满温暖闪烁的霓虹灯和动感的城市标识。她穿着黑色皮夹克、红色长裙和黑色靴子,拎着黑色钱包,戴着太阳镜,涂着红色口红。街道潮湿且有反光,营造出五彩缤纷的灯光效果。许多行人在街上行走。<br/><em>A stylish woman walks down a Tokyo street filled with warm glowing neon and animated city signage...</em></td>
 <td align="center">
   <a href="https://cdn.openai.com/sora/videos/tokyo-walk.mp4">
-    <img src="https://img.shields.io/badge/▶️_Play-Video-red?style=for-the-badge" alt="Play Video"/>
+    <img src="https://img.shields.io/badge/▶️_播放-视频-red?style=for-the-badge" alt="播放视频"/>
   </a>
 </td>
 <td align="center">
-  <a href="./prompts/official-prompts.md#tokyo-walk">📖 Details</a>
+  <a href="./prompts/official-prompts.md#tokyo-walk">📖 详情</a>
 </td>
 </tr>
 
 <tr>
-<td><strong>🦣 Wooly Mammoths</strong></td>
-<td>"Several giant wooly mammoths approach treading through a snowy meadow..."</td>
+<td><strong>🦣 长毛猛犸象</strong></td>
+<td>几只巨大的长毛猛犸象穿过雪地草原走来,它们长长的毛发在风中轻轻飘动。远处是白雪覆盖的树木和壮观的雪山,午后的云朵在空中飘荡,阳光高照,远处的景色朦胧。<br/><em>Several giant wooly mammoths approach treading through a snowy meadow...</em></td>
 <td align="center">
   <a href="https://cdn.openai.com/sora/videos/wooly-mammoth.mp4">
-    <img src="https://img.shields.io/badge/▶️_Play-Video-red?style=for-the-badge" alt="Play Video"/>
+    <img src="https://img.shields.io/badge/▶️_播放-视频-red?style=for-the-badge" alt="播放视频"/>
   </a>
 </td>
 <td align="center">
-  <a href="./prompts/official-prompts.md#wooly-mammoths">📖 Details</a>
+  <a href="./prompts/official-prompts.md#wooly-mammoths">📖 详情</a>
 </td>
 </tr>
 
 <tr>
-<td><strong>🚀 Mitten Astronaut</strong></td>
-<td>"A movie trailer featuring the adventures of the 30 year old space man..."</td>
+<td><strong>🚀 连指手套宇航员</strong></td>
+<td>一部电影预告片,讲述 30 岁太空人的冒险故事,他穿着红色羊毛针织摩托车头盔,天空蓝色,盐漠风格。电影风格,35mm 胶片拍摄,色彩鲜艳。<br/><em>A movie trailer featuring the adventures of the 30 year old space man wearing a red wool knitted motorcycle helmet...</em></td>
 <td align="center">
   <a href="https://cdn.openai.com/sora/videos/mitten-astronaut.mp4">
-    <img src="https://img.shields.io/badge/▶️_Play-Video-red?style=for-the-badge" alt="Play Video"/>
+    <img src="https://img.shields.io/badge/▶️_播放-视频-red?style=for-the-badge" alt="播放视频"/>
   </a>
 </td>
 <td align="center">
-  <a href="./prompts/official-prompts.md#mitten-astronaut">📖 Details</a>
+  <a href="./prompts/official-prompts.md#mitten-astronaut">📖 详情</a>
 </td>
 </tr>
 
 <tr>
-<td><strong>🐠 Papercraft Reef</strong></td>
-<td>"A gorgeously rendered papercraft world of a coral reef..."</td>
+<td><strong>🐠 纸艺珊瑚礁</strong></td>
+<td>一个精美渲染的纸艺珊瑚礁世界,到处是色彩斑斓的鱼和海洋生物。<br/><em>A gorgeously rendered papercraft world of a coral reef, rife with colorful fish and sea creatures...</em></td>
 <td align="center">
   <a href="https://cdn.openai.com/sora/videos/origami-undersea.mp4">
-    <img src="https://img.shields.io/badge/▶️_Play-Video-red?style=for-the-badge" alt="Play Video"/>
+    <img src="https://img.shields.io/badge/▶️_播放-视频-red?style=for-the-badge" alt="播放视频"/>
   </a>
 </td>
 <td align="center">
-  <a href="./prompts/official-prompts.md#papercraft-reef">📖 Details</a>
+  <a href="./prompts/official-prompts.md#papercraft-reef">📖 详情</a>
 </td>
 </tr>
 
 <tr>
-<td><strong>🐉 Dragon over Glacier</strong><br/><sub>Sora 2</sub></td>
-<td>"Primary Target & Visuals: a dragon slicing past serrated ice spires..."</td>
+<td><strong>🐉 冰川上的巨龙</strong><br/><sub>Sora 2</sub></td>
+<td>主要目标和视觉效果:一条巨龙飞掠过锯齿状的冰柱,在冰冻的北极荒原上空翱翔。龙鳞在微弱的极光下闪闪发光。环境:浮冰破裂,雪花飘落。<br/><em>Primary Target & Visuals: a dragon slicing past serrated ice spires, soaring over frozen arctic wastes...</em></td>
 <td align="center">
   <a href="https://openai.com/index/sora-2/">
-    <img src="https://img.shields.io/badge/▶️_Play-Video-red?style=for-the-badge" alt="Play Video"/>
+    <img src="https://img.shields.io/badge/▶️_播放-视频-red?style=for-the-badge" alt="播放视频"/>
   </a>
 </td>
 <td align="center">
-  <a href="./prompts/official-prompts.md#dragon-glacier">📖 Details</a>
+  <a href="./prompts/official-prompts.md#dragon-glacier">📖 详情</a>
 </td>
 </tr>
 
 </tbody>
 </table>
 
-[→ See all official prompts](./prompts/official-prompts.md)
+[→ 查看所有官方提示词](./prompts/official-prompts.md)
 
-### Viral Community Prompts
+### 社区爆款提示词
 
-Curated from high-engagement X posts, showcasing Sora 2's diverse capabilities from anime to advertising, meta-humor to motivational content.
+从高互动 X 平台帖子中精选,展示 Sora 2 从动漫到广告、元幽默到励志内容的多样化能力。
 
 <table>
 <thead>
 <tr>
-<th>Prompt</th>
-<th>Description</th>
-<th align="center">Video</th>
+<th>提示词</th>
+<th>描述</th>
+<th align="center">视频</th>
 </tr>
 </thead>
 <tbody>
 
 <tr>
-<td><strong>"cctv footage of sam stealing gpus at target for sora inference"</strong></td>
-<td>CCTV-style video of Sam Altman shoplifting GPUs; meta-humor on AI compute needs with grainy security camera aesthetics</td>
+<td><strong>监控录像:Sam 在 Target 偷 GPU 用于 Sora 推理</strong><br/><em>"cctv footage of sam stealing gpus at target for sora inference"</em></td>
+<td>监控风格视频,Sam Altman 偷窃 GPU;关于 AI 算力需求的元幽默,带有颗粒感的安防摄像头美学</td>
 <td align="center">
   <a href="https://x.com/GabrielPeterss4/status/1973120058907041902">
-    <img src="https://img.shields.io/badge/▶️_Watch-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="Watch on X"/>
+    <img src="https://img.shields.io/badge/▶️_观看-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="在 X 上观看"/>
   </a>
 </td>
 </tr>
 
 <tr>
-<td><strong>"I tested the AI model Sora 2 on classic anime, the result is hardly believable..."</strong></td>
-<td>Classic anime recreation; long clip mimicking styles like Dragon Ball or Naruto with exceptional fidelity</td>
+<td><strong>用 Sora 2 测试经典动漫,结果令人难以置信</strong><br/><em>"I tested the AI model Sora 2 on classic anime, the result is hardly believable..."</em></td>
+<td>经典动漫重现;长片段模仿龙珠或火影忍者等风格,保真度极高</td>
 <td align="center">
   <a href="https://x.com/naegiko/status/1973171308868542578">
-    <img src="https://img.shields.io/badge/▶️_Watch-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="Watch on X"/>
+    <img src="https://img.shields.io/badge/▶️_观看-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="在 X 上观看"/>
   </a>
 </td>
 </tr>
 
 <tr>
-<td><strong>"Rick and Morty generated by Sora 2 my god"</strong></td>
-<td>Rick and Morty episode clip; faithful to show's chaotic style with dialogue and character voices</td>
+<td><strong>Sora 2 生成的瑞克和莫蒂,天哪</strong><br/><em>"Rick and Morty generated by Sora 2 my god"</em></td>
+<td>瑞克和莫蒂剧集片段;忠实于该剧混乱风格,包含对话和角色配音</td>
 <td align="center">
   <a href="https://x.com/atbeme/status/1973127491033375044">
-    <img src="https://img.shields.io/badge/▶️_Watch-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="Watch on X"/>
+    <img src="https://img.shields.io/badge/▶️_观看-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="在 X 上观看"/>
   </a>
 </td>
 </tr>
 
 <tr>
-<td><strong>"used Sora 2 to generate this video. the audio is great but the movement is still not very realistic."</strong></td>
-<td>Generic action scene; highlights audio strengths but motion limitations, often shared for critique</td>
+<td><strong>用 Sora 2 生成视频,音频很棒但动作还不够真实</strong><br/><em>"used Sora 2 to generate this video. the audio is great but the movement is still not very realistic."</em></td>
+<td>通用动作场景;突出音频优势但动作局限性,通常用于评测分享</td>
 <td align="center">
   <a href="https://x.com/Andr3jH/status/1973171921899626966">
-    <img src="https://img.shields.io/badge/▶️_Watch-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="Watch on X"/>
+    <img src="https://img.shields.io/badge/▶️_观看-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="在 X 上观看"/>
   </a>
 </td>
 </tr>
 
 <tr>
-<td><strong>"the most 80's thing ever"</strong></td>
-<td>Over-the-top 80s montage with neon, synth music, and retro fashion; uncanny valley vibes in a nostalgic package</td>
+<td><strong>最 80 年代的东西</strong><br/><em>"the most 80's thing ever"</em></td>
+<td>夸张的 80 年代蒙太奇,霓虹灯、合成音乐和复古时尚;怀旧包装下的诡异谷效应</td>
 <td align="center">
   <a href="https://x.com/anatelorenzen/status/1973138258705183068">
-    <img src="https://img.shields.io/badge/▶️_Watch-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="Watch on X"/>
+    <img src="https://img.shields.io/badge/▶️_观看-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="在 X 上观看"/>
   </a>
 </td>
 </tr>
 
 <tr>
-<td><strong>"Sora 2 can also do chaotic Japanese ads if you ask it to"</strong></td>
-<td>Frenetic Japanese commercial style; fast cuts, exaggerated expressions, and cultural tropes</td>
+<td><strong>Sora 2 也能做疯狂的日本广告,只要你让它做</strong><br/><em>"Sora 2 can also do chaotic Japanese ads if you ask it to"</em></td>
+<td>狂热的日本商业广告风格;快速剪辑、夸张表情和文化元素</td>
 <td align="center">
   <a href="https://x.com/cloud11665/status/1973115723309515092">
-    <img src="https://img.shields.io/badge/▶️_Watch-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="Watch on X"/>
+    <img src="https://img.shields.io/badge/▶️_观看-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="在 X 上观看"/>
   </a>
 </td>
 </tr>
 
 <tr>
-<td><strong>"generate the greatest hype video of all time"</strong></td>
-<td>Epic motivational montage with dramatic music and visuals; AI-generated dialogue adds hype</td>
+<td><strong>生成史上最燃的宣传片</strong><br/><em>"generate the greatest hype video of all time"</em></td>
+<td>史诗般的励志蒙太奇,配有戏剧性音乐和视觉效果;AI 生成的对话增添激情</td>
 <td align="center">
   <a href="https://x.com/SantsPliego/status/1973206657682514069">
-    <img src="https://img.shields.io/badge/▶️_Watch-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="Watch on X"/>
+    <img src="https://img.shields.io/badge/▶️_观看-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="在 X 上观看"/>
   </a>
 </td>
 </tr>
 
 <tr>
-<td><strong>"Generate a modern Japanese anime video of a hero fighting a villain on a rainy night..."</strong></td>
-<td>Anime hero-villain fight; image-to-video with dynamic weather, flashes, swords, and blood effects</td>
+<td><strong>生成现代日本动漫:英雄雨夜与恶棍战斗</strong><br/><em>"Generate a modern Japanese anime video of a hero fighting a villain on a rainy night..."</em></td>
+<td>动漫英雄反派战斗;图生视频,动态天气、闪光、剑刃和血液效果</td>
 <td align="center">
   <a href="https://x.com/KomikoAI/status/1973167598134333479">
-    <img src="https://img.shields.io/badge/▶️_Watch-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="Watch on X"/>
+    <img src="https://img.shields.io/badge/▶️_观看-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="在 X 上观看"/>
   </a>
 </td>
 </tr>
 
 <tr>
-<td><strong>"a group of people playing volleyball"</strong></td>
-<td>Demonstrates enhanced physics in group activities</td>
+<td><strong>一群人打排球<br/><em>"a group of people playing volleyball"</em></strong></td>
+<td>展示群体活动中增强的物理效果</td>
 <td align="center">
   <a href="https://x.com/mattshumer_/status/1973083840689156207">
-    <img src="https://img.shields.io/badge/▶️_Watch-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="Watch on X"/>
+    <img src="https://img.shields.io/badge/▶️_观看-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="在 X 上观看"/>
   </a>
 </td>
 </tr>
 
 <tr>
-<td><strong>"create a luxury ad for a black Mercedes Class G"</strong></td>
-<td>High-production car commercial with smooth camera work</td>
+<td><strong>为黑色奔驰 G 级制作豪华广告<br/><em>"create a luxury ad for a black Mercedes Class G"</em></strong></td>
+<td>高制作水准的汽车广告,流畅的镜头运动</td>
 <td align="center">
   <a href="https://x.com/LudovicCreator/status/1973236674659492236">
-    <img src="https://img.shields.io/badge/▶️_Watch-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="Watch on X"/>
+    <img src="https://img.shields.io/badge/▶️_观看-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="在 X 上观看"/>
   </a>
 </td>
 </tr>
 
 <tr>
-<td><strong>"open Sora, type a prompt in, and generate video!"</strong></td>
-<td>Recursive "Soraception" showing the app interface</td>
+<td><strong>打开 Sora,输入提示词,生成视频!<br/><em>"open Sora, type a prompt in, and generate video!"</em></strong></td>
+<td>递归式"Sora 套娃",展示应用界面</td>
 <td align="center">
   <a href="https://x.com/elder_plinius/status/1973116259693949357">
-    <img src="https://img.shields.io/badge/▶️_Watch-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="Watch on X"/>
+    <img src="https://img.shields.io/badge/▶️_观看-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="在 X 上观看"/>
   </a>
 </td>
 </tr>
 
 <tr>
-<td><strong>"Photorealistic werewolf transformation..."</strong></td>
-<td>Transformation scene with audio and cinematic effects</td>
+<td><strong>照片级真实的狼人变身...<br/><em>"Photorealistic werewolf transformation..."</em></strong></td>
+<td>变身场景配有音频和电影效果</td>
 <td align="center">
   <a href="https://x.com/JeffSynthesized/status/1973198469943927089">
-    <img src="https://img.shields.io/badge/▶️_Watch-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="Watch on X"/>
+    <img src="https://img.shields.io/badge/▶️_观看-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="在 X 上观看"/>
   </a>
 </td>
 </tr>
 
 <tr>
-<td><strong>"un pangolín surfeando en Hawai (bueno y Sam)"</strong></td>
-<td>A pangolin surfing in Hawaii with Sam Altman cameo; whimsical animal animations with realistic waves</td>
+<td><strong>一只穿山甲在夏威夷冲浪\(还有 Sam\)<br/><em>"un pangolín surfeando en Hawai \(bueno y Sam\)"</em></strong></td>
+<td>穿山甲和 Sam Altman 客串在夏威夷冲浪;异想天开的动物动画配逼真海浪</td>
 <td align="center">
   <a href="https://x.com/DotCSV/status/1973133251121160212">
-    <img src="https://img.shields.io/badge/▶️_Watch-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="Watch on X"/>
+    <img src="https://img.shields.io/badge/▶️_观看-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="在 X 上观看"/>
   </a>
 </td>
 </tr>
 
 <tr>
-<td><strong>"Cartman reporting live the Genz Protests"</strong></td>
-<td>South Park's Cartman in a news report parody; satirical take on protests with characteristic humor</td>
+<td><strong>卡特曼现场报道 Z 世代抗议<br/><em>"Cartman reporting live the Genz Protests"</em></strong></td>
+<td>南方公园的卡特曼新闻报道恶搞;对抗议的讽刺演绎,带有标志性幽默</td>
 <td align="center">
   <a href="https://x.com/marouane53/status/1973295289923739936">
-    <img src="https://img.shields.io/badge/▶️_Watch-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="Watch on X"/>
+    <img src="https://img.shields.io/badge/▶️_观看-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="在 X 上观看"/>
   </a>
 </td>
 </tr>
 
 <tr>
-<td><strong>"a funny music video with corgis shaking their behinds"</strong></td>
-<td>Corgi dance music video; cute and rhythmic, part of animal-themed viral series</td>
+<td><strong>柯基摇屁股的搞笑音乐视频<br/><em>"a funny music video with corgis shaking their behinds"</em></strong></td>
+<td>柯基舞蹈音乐视频;可爱且有节奏感,动物主题爆款系列之一</td>
 <td align="center">
   <a href="https://x.com/theteriyu/status/1973086774546125155">
-    <img src="https://img.shields.io/badge/▶️_Watch-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="Watch on X"/>
+    <img src="https://img.shields.io/badge/▶️_观看-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="在 X 上观看"/>
   </a>
 </td>
 </tr>
 
 <tr>
-<td><strong>"Pink fluffy unicorns dancing on rainbows"</strong></td>
-<td>Whimsical unicorn dance; nostalgic and colorful, fulfilling a repeated prompt challenge</td>
+<td><strong>粉色毛茸茸的独角兽在彩虹上跳舞<br/><em>"Pink fluffy unicorns dancing on rainbows"</em></strong></td>
+<td>异想天开的独角兽舞蹈;怀旧且色彩缤纷,完成重复提示词挑战</td>
 <td align="center">
   <a href="https://x.com/drewdil/status/1973238424627978451">
-    <img src="https://img.shields.io/badge/▶️_Watch-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="Watch on X"/>
+    <img src="https://img.shields.io/badge/▶️_观看-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="在 X 上观看"/>
   </a>
 </td>
 </tr>
 
 <tr>
-<td><strong>"lmao sora 2 is funny af"</strong></td>
-<td>Unspecified funny clip shared for humor; likely absurd scenario showcasing Sora 2's entertainment value</td>
+<td><strong>哈哈 Sora 2 太搞笑了<br/><em>"lmao sora 2 is funny af"</em></strong></td>
+<td>未指定的搞笑片段;可能是荒诞场景,展示 Sora 2 的娱乐价值</td>
 <td align="center">
   <a href="https://x.com/AGJimmi/status/1973141639347708003">
-    <img src="https://img.shields.io/badge/▶️_Watch-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="Watch on X"/>
+    <img src="https://img.shields.io/badge/▶️_观看-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="在 X 上观看"/>
   </a>
 </td>
 </tr>
 
 <tr>
-<td><strong>"@sama getting angry over a D&D game. he's being very nerdy about some specific rule of the game"</strong></td>
-<td>Sam Altman in a heated Dungeons & Dragons session; captures nerdy frustration with detailed expressions and tabletop elements</td>
+<td><strong>@sama 在 D&D 游戏中发火。他对游戏的某个特定规则非常较真<br/><em>"@sama getting angry over a D&D game. he's being very nerdy about some specific rule of the game"</em></strong></td>
+<td>Sam Altman 在激烈的龙与地下城游戏中;捕捉书呆子的挫败感,细致的表情和桌游元素</td>
 <td align="center">
   <a href="https://x.com/WesRothMoney/status/1973125953871397332">
-    <img src="https://img.shields.io/badge/▶️_Watch-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="Watch on X"/>
+    <img src="https://img.shields.io/badge/▶️_观看-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="在 X 上观看"/>
   </a>
 </td>
 </tr>
 
 <tr>
-<td><strong>"Please use the characters in the image to generate a Japanese anime trailer in the style of Ghost in the Shell (Production I.G Studio)"</strong></td>
-<td>Ghost in the Shell-style trailer; anime aesthetic with cyberpunk elements and character references from uploaded images</td>
+<td><strong>请使用图片中的角色生成攻壳机动队风格\(Production I.G 工作室\)的日本动漫预告片<br/><em>"Please use the characters in the image to generate a Japanese anime trailer in the style of Ghost in the Shell \(Production I.G Studio\)"</em></strong></td>
+<td>攻壳机动队风格预告片;动漫美学配赛博朋克元素和上传图片的角色参考</td>
 <td align="center">
   <a href="https://x.com/chenshaoju/status/1973285480071569711">
-    <img src="https://img.shields.io/badge/▶️_Watch-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="Watch on X"/>
+    <img src="https://img.shields.io/badge/▶️_观看-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="在 X 上观看"/>
   </a>
 </td>
 </tr>
 
 <tr>
-<td><strong>"Crazy sora 2. Is this real or AI??"</strong></td>
-<td>Blurry, ambiguous scene questioning reality; plays on deepfake fears and AI authenticity with Sam Altman reference</td>
+<td><strong>疯狂的 Sora 2。这是真的还是 AI\?\?<br/><em>"Crazy sora 2. Is this real or AI??"</em></strong></td>
+<td>模糊、模棱两可的场景质疑真实性;利用深度伪造恐惧和 AI 真实性,带有 Sam Altman 元素</td>
 <td align="center">
   <a href="https://x.com/iamskorer/status/1973254528133898578">
-    <img src="https://img.shields.io/badge/▶️_Watch-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="Watch on X"/>
+    <img src="https://img.shields.io/badge/▶️_观看-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="在 X 上观看"/>
   </a>
 </td>
 </tr>
 
 <tr>
-<td><strong>"A cheerful and charming young Japanese idol live-streams a gaming session, dressed in a stylish and comfortable camisole..."</strong></td>
-<td>Japanese idol gaming stream with ultra-realistic details; features lip-sync, interactive elements, cinematic lighting, and RGB gaming setup</td>
+<td><strong>一位开朗迷人的年轻日本偶像直播游戏,穿着时尚舒适的吊带衫...<br/><em>"A cheerful and charming young Japanese idol live-streams a gaming session, dressed in a stylish and comfortable camisole..."</em></strong></td>
+<td>日本偶像游戏直播,超真实细节;具有唇同步、互动元素、电影级光照和 RGB 游戏装备</td>
 <td align="center">
   <a href="https://x.com/iX00AI/status/1973360047301468493">
-    <img src="https://img.shields.io/badge/▶️_Watch-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="Watch on X"/>
+    <img src="https://img.shields.io/badge/▶️_观看-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="在 X 上观看"/>
   </a>
 </td>
 </tr>
 
 <tr>
-<td><strong>"a pirate girl materializing laying on the red bed and saying: 'Poof! Hello guys, how do I look? I was generated in Sora 2...'"</strong></td>
-<td>Pirate girl appearance with synchronized dialogue; combines materialization effects, character speech, and pirate flair with muscle flexing</td>
+<td><strong>一个海盗女孩躺在红色床上具象化并说:'嘭!大家好,我看起来怎么样\?我是在 Sora 2 中生成的...'<br/><em>"a pirate girl materializing laying on the red bed and saying: 'Poof! Hello guys, how do I look? I was generated in Sora 2...'"</em></strong></td>
+<td>海盗女孩出现配同步对话;结合具象化效果、角色语音和海盗风格的肌肉展示</td>
 <td align="center">
   <a href="https://x.com/Jakub_AI_Art/status/1973127879006494968">
-    <img src="https://img.shields.io/badge/▶️_Watch-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="Watch on X"/>
+    <img src="https://img.shields.io/badge/▶️_观看-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="在 X 上观看"/>
   </a>
 </td>
 </tr>
 
 <tr>
-<td><strong>"Advertisement for a gourmet cheese wheel, slow-motion rolls down alpine hills pursued by eager goats in chef hats..."</strong></td>
-<td>Humorous cheese advertisement with slow-motion chase scene; playful and absurd concept with triumphant picnic finale</td>
+<td><strong>美食奶酪轮广告,慢动作滚下阿尔卑斯山坡,戴着厨师帽的急切山羊追逐...<br/><em>"Advertisement for a gourmet cheese wheel, slow-motion rolls down alpine hills pursued by eager goats in chef hats..."</em></strong></td>
+<td>幽默的奶酪广告配慢动作追逐场景;有趣而荒诞的概念,以胜利的野餐结局收尾</td>
 <td align="center">
   <a href="https://x.com/Gdgtify/status/1973314782989263039">
-    <img src="https://img.shields.io/badge/▶️_Watch-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="Watch on X"/>
+    <img src="https://img.shields.io/badge/▶️_观看-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="在 X 上观看"/>
   </a>
 </td>
 </tr>
 
 <tr>
-<td><strong>"skateboarder does a kickflip"</strong></td>
-<td>Simple skateboarding trick; tests physics accuracy with motion capture-like precision in athletic movement</td>
+<td><strong>滑板手做 kickflip<br/><em>"skateboarder does a kickflip"</em></strong></td>
+<td>简单的滑板技巧;测试物理精度,运动捕捉般的运动精度</td>
 <td align="center">
   <a href="https://x.com/name__0_i_0/status/1973213801924403315">
-    <img src="https://img.shields.io/badge/▶️_Watch-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="Watch on X"/>
+    <img src="https://img.shields.io/badge/▶️_观看-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="在 X 上观看"/>
   </a>
 </td>
 </tr>
 
 <tr>
-<td><strong>"simulate me trying to gain access to Sora2 but failing"</strong></td>
-<td>Meta simulation of access denial; ironic commentary on invite-only rollout and user frustration</td>
+<td><strong>模拟我尝试访问 Sora2 但失败<br/><em>"simulate me trying to gain access to Sora2 but failing"</em></strong></td>
+<td>访问被拒的元模拟;对仅限邀请推出和用户挫败感的讽刺评论</td>
 <td align="center">
   <a href="https://x.com/LordSecretive/status/1973209293601251476">
-    <img src="https://img.shields.io/badge/▶️_Watch-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="Watch on X"/>
+    <img src="https://img.shields.io/badge/▶️_观看-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="在 X 上观看"/>
   </a>
 </td>
 </tr>
 
 <tr>
-<td><strong>"Two students whisper nervously while cheating during an exam"</strong></td>
-<td>Classroom cheating scene; captures subtle tension and realistic student interactions with nervous body language</td>
+<td><strong>两名学生在考试中作弊时紧张地窃窃私语<br/><em>"Two students whisper nervously while cheating during an exam"</em></strong></td>
+<td>教室作弊场景;捕捉微妙的紧张感和真实的学生互动,紧张的肢体语言</td>
 <td align="center">
   <a href="https://x.com/airina_xyz/status/1973351766780682440">
-    <img src="https://img.shields.io/badge/▶️_Watch-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="Watch on X"/>
+    <img src="https://img.shields.io/badge/▶️_观看-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="在 X 上观看"/>
   </a>
 </td>
 </tr>
 
 <tr>
-<td><strong>"Un viajero del tiempo intentando evitar la caída de la bomba de Hiroshima"</strong></td>
-<td>Time traveler attempting to prevent Hiroshima bombing; dramatic historical reimagining with tension and moral weight</td>
+<td><strong>一个时间旅行者试图阻止广岛原子弹的投下<br/><em>"Un viajero del tiempo intentando evitar la caída de la bomba de Hiroshima"</em></strong></td>
+<td>时间旅行者试图阻止广岛轰炸;戏剧性的历史重构,充满紧张感和道德分量</td>
 <td align="center">
   <a href="https://x.com/Leroysmer/status/1973341723733721550">
-    <img src="https://img.shields.io/badge/▶️_Watch-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="Watch on X"/>
+    <img src="https://img.shields.io/badge/▶️_观看-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="在 X 上观看"/>
   </a>
 </td>
 </tr>
 
 <tr>
-<td><strong>"A short hair cute influencer is trying to sell to the camera a smooth cylindrical object..."</strong></td>
-<td>Influencer product pitch with subtle humor; iPhone-style recording with polished minimal design aesthetic</td>
+<td><strong>一位短发可爱的网红试图向镜头推销一个光滑的圆柱形物体...<br/><em>"A short hair cute influencer is trying to sell to the camera a smooth cylindrical object..."</em></strong></td>
+<td>网红产品推销配微妙幽默;iPhone 风格录制,精致的极简设计美学</td>
 <td align="center">
   <a href="https://x.com/name__0_i_0/status/1973368893080215888">
-    <img src="https://img.shields.io/badge/▶️_Watch-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="Watch on X"/>
+    <img src="https://img.shields.io/badge/▶️_观看-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="在 X 上观看"/>
   </a>
 </td>
 </tr>
 
 <tr>
-<td><strong>"I asked SORA 2 to create a 90s Toy Ad of Epstein's Island"</strong></td>
-<td>Retro 90s-style toy advertisement parody; surreal and controversial concept with upbeat narration and toy-like visuals</td>
+<td><strong>我让 SORA 2 制作了爱泼斯坦岛的 90 年代玩具广告<br/><em>"I asked SORA 2 to create a 90s Toy Ad of Epstein's Island"</em></strong></td>
+<td>复古 90 年代风格玩具广告恶搞;超现实且有争议的概念,欢快的旁白和玩具般的视觉效果</td>
 <td align="center">
   <a href="https://x.com/Solopopsss/status/1973363399234052232">
-    <img src="https://img.shields.io/badge/▶️_Watch-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="Watch on X"/>
+    <img src="https://img.shields.io/badge/▶️_观看-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="在 X 上观看"/>
   </a>
 </td>
 </tr>
 
 <tr>
-<td><strong>"star in a musical using American Revolution style. Topic of rap is 'The Innovator's Dilemma'"</strong></td>
-<td>Historical rap musical with cameo avatar; blends American Revolution aesthetics with modern rap about business innovation</td>
+<td><strong>用美国独立战争风格出演音乐剧。说唱主题是'创新者的窘境'<br/><em>"star in a musical using American Revolution style. Topic of rap is 'The Innovator's Dilemma'"</em></strong></td>
+<td>历史说唱音乐剧配头像客串;将美国独立战争美学与关于商业创新的现代说唱融合</td>
 <td align="center">
   <a href="https://x.com/firstadopter/status/1973126057227383219">
-    <img src="https://img.shields.io/badge/▶️_Watch-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="Watch on X"/>
+    <img src="https://img.shields.io/badge/▶️_观看-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="在 X 上观看"/>
   </a>
 </td>
 </tr>
 
 <tr>
-<td><strong>"the gang discovers Waymo"</strong></td>
-<td>South Park episode about Waymo self-driving cars; generates full episode clip with dialogue faithful to the show's style</td>
+<td><strong>这帮人发现了 Waymo<br/><em>"the gang discovers Waymo"</em></strong></td>
+<td>南方公园关于 Waymo 自动驾驶汽车的剧集;生成完整剧集片段,对话忠实于该剧风格</td>
 <td align="center">
   <a href="https://x.com/venturetwins/status/1973158674899280077">
-    <img src="https://img.shields.io/badge/▶️_Watch-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="Watch on X"/>
+    <img src="https://img.shields.io/badge/▶️_观看-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="在 X 上观看"/>
   </a>
 </td>
 </tr>
 
 <tr>
-<td><strong>"Love Island reveal scene. A young woman sits on a plush villa sofa during 'Movie Night'..."</strong></td>
-<td>Reality TV parody with Ronald McDonald and Wendy; surreal Love Island scene mixing brand mascots with dramatic reactions</td>
+<td><strong>恋爱岛揭秘场景。一位年轻女士在'电影之夜'坐在豪华别墅沙发上...<br/><em>"Love Island reveal scene. A young woman sits on a plush villa sofa during 'Movie Night'..."</em></strong></td>
+<td>真人秀恶搞,麦当劳叔叔和温蒂;超现实的恋爱岛场景,混合品牌吉祥物和戏剧性反应</td>
 <td align="center">
   <a href="https://x.com/Ror_Fly/status/1973220869318013399">
-    <img src="https://img.shields.io/badge/▶️_Watch-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="Watch on X"/>
+    <img src="https://img.shields.io/badge/▶️_观看-X/Twitter-1DA1F2?style=for-the-badge&logo=x" alt="在 X 上观看"/>
   </a>
 </td>
 </tr>
@@ -473,75 +473,74 @@ Curated from high-engagement X posts, showcasing Sora 2's diverse capabilities f
 </tbody>
 </table>
 
-[→ See all Sora 2 viral prompts with detailed analysis](./prompts/sora2-viral-prompts.md)
+[→ 查看所有 Sora 2 爆款提示词及详细分析](./prompts/sora2-viral-prompts.md)
 
-### Prompts by Category
+### 分类提示词集合
 
-- [🌄 Hyperrealism & Landscapes](./prompts/hyperrealism-landscapes.md)
-- [🎨 Surreal & Imaginative](./prompts/surreal-imaginative.md)
-- [👤 Character-Driven Narratives](./prompts/character-narratives.md)
-- [🎭 Stylized & Animation](./prompts/stylized-animation.md)
-- [📜 Historical & Archival](./prompts/historical-archival.md)
-- [🎬 Cinematic & Director Styles](./prompts/cinematic-styles.md)
+- [🌄 超写实与风景](./prompts/hyperrealism-landscapes.md)
+- [🎨 超现实与想象](./prompts/surreal-imaginative.md)
+- [👤 角色驱动叙事](./prompts/character-narratives.md)
+- [🎭 风格化与动画](./prompts/stylized-animation.md)
+- [📜 历史与档案](./prompts/historical-archival.md)
+- [🎬 电影与导演风格](./prompts/cinematic-styles.md)
 
-## 📖 Prompt Engineering Guide
+## 📖 提示词工程指南
 
-Want to create your own amazing prompts? Check out our comprehensive guides:
+想要创建你自己的惊艳提示词?查看我们的综合指南:
 
-- [**Getting Started**](./guides/getting-started.md) - Basic principles and your first prompt
-- [**The Five Pillars Framework**](./guides/five-pillars.md) - Deep dive into the core framework
-- [**Cinematic Techniques**](./guides/cinematic-techniques.md) - Camera angles, movements, and framing
-- [**Style Replication**](./guides/style-replication.md) - Mimic famous directors and artists
-- [**Physics & Motion**](./guides/physics-motion.md) - Implicit physics instructions
-- [**Sora 2 Audio Guide**](./guides/audio-guide.md) - Working with synchronized audio
+- [**入门指南**](./guides/getting-started.md) - 基本原则和你的第一个提示词
+- [**五大支柱框架**](./guides/five-pillars.md) - 核心框架深度解析
+- [**电影化技巧**](./guides/cinematic-techniques.md) - 镜头角度、运动和取景
+- [**风格复制**](./guides/style-replication.md) - 模仿著名导演和艺术家
+- [**物理与运动**](./guides/physics-motion.md) - 隐式物理指令
+- [**Sora 2 音频指南**](./guides/audio-guide.md) - 使用同步音频
 
-## 🤝 Contributing
+## 🤝 贡献指南
 
-We welcome contributions from the community! Whether it's a new prompt, analysis, or improvement, please see our [Contributing Guidelines](CONTRIBUTING.md).
+我们欢迎社区贡献!无论是新的提示词、分析还是改进建议,请查看我们的[贡献指南](CONTRIBUTING.md)。
 
-### Quick Contribution Guide
+### 快速贡献步骤
 
-1. Fork this repository
-2. Add your prompt using the template
-3. Include video link and source
-4. Submit a pull request
+1. Fork 此仓库
+2. 使用模板添加你的提示词
+3. 包含视频链接和来源
+4. 提交 Pull Request
 
-## 📊 Prompt Analysis Insights
+## 📊 提示词分析洞察
 
-Based on community analysis of 32+ experiments:
+基于对 32+ 个实验的社区分析:
 
-- ✅ **Prompts under 120 words** perform better for creative content
-- ✅ **Specific camera instructions** dramatically improve visual impact
-- ✅ **Animal-focused prompts** have high success rates
-- ✅ **Sensory details** (textures, lighting, reflections) enhance realism
-- ⚠️ **Overly complex physics** may cause artifacts
-- ⚠️ **Vague descriptions** lead to inconsistent results
+- ✅ **120 词以下的提示词**在创意内容方面表现更好
+- ✅ **具体的镜头指令**显著提升视觉冲击力
+- ✅ **动物主题提示词**成功率高
+- ✅ **感官细节**(纹理、光照、反射)增强真实感
+- ⚠️ **过于复杂的物理**可能导致伪影
+- ⚠️ **模糊的描述**导致不一致的结果
 
-## 🔗 Resources
+## 🔗 相关资源
 
-### Official Resources
-- [Sora 2 Official Announcement](https://openai.com/index/sora-2/)
-- [Video Generation Models as World Simulators](https://openai.com/index/video-generation-models-as-world-simulators/)
-- [Sora Technical Report](https://openai.com/index/sora/)
+### 官方资源
+- [Sora 2 官方公告](https://openai.com/index/sora-2/)
+- [视频生成模型作为世界模拟器](https://openai.com/index/video-generation-models-as-world-simulators/)
+- [Sora 技术报告](https://openai.com/index/sora/)
 
-### Community Resources
+### 社区资源
 - [Best Sora Prompts](https://bestsoraprompts.com/)
 - [Prompt Sora Community](https://prompts-sora.com/)
 - [Sora Prompt Engineering Guide](https://www.promptingguide.ai/models/sora)
 
-### Related Repositories
+### 相关仓库
 - [awesome-sora-prompts](https://github.com/xjpp22/awesome--sora-prompts)
 - [Awesome-Open-AI-Sora](https://github.com/Curated-Awesome-Lists/Awesome-Open-AI-Sora)
 
-## 📝 License
+## 📝 许可证
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+本项目采用 MIT 许可证 - 详见 [LICENSE](LICENSE) 文件。
 
-## ⭐ Star History
+## ⭐ Star 历史
 
-If you find this repository useful, please consider giving it a star! It helps others discover these resources.
+如果你觉得这个仓库有用,请考虑给它一个 Star!这有助于其他人发现这些资源。
 
 ---
 
-**Maintained by the community** | **Last Updated**: October 2025 | [Report Issues](https://github.com/zhangchenchen/awesome-sora2-prompt/issues)
-
+**由社区维护** | **最后更新**: 2025 年 10 月 | [报告问题](https://github.com/zhangchenchen/awesome-sora2-prompt/issues)
