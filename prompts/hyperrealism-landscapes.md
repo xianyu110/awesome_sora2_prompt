@@ -1,296 +1,241 @@
-# Hyperrealism & Landscapes
+# 超写实主义与风景
 
-Photorealistic natural scenes, cityscapes, aerial views, and documentary-style footage that push the boundaries of visual fidelity.
+逼真的自然场景、城市景观、航拍视角和纪录片风格的镜头，突破视觉保真度的极限。
 
-## Table of Contents
+## 目录
 
-- [Coastal & Ocean](#coastal--ocean)
-- [Mountains & Nature](#mountains--nature)
-- [Urban Landscapes](#urban-landscapes)
-- [Aerial & Drone Views](#aerial--drone-views)
-- [Weather & Atmospheric](#weather--atmospheric)
+- [海岸与海洋](#海岸与海洋)
+- [山脉与自然](#山脉与自然)
+- [城市景观](#城市景观)
+- [航拍与无人机视角](#航拍与无人机视角)
+- [天气与大气](#天气与大气)
 
 ---
 
-## Coastal & Ocean
+## 海岸与海洋
 
-### Big Sur Coastline
+### 大苏尔海岸线
 
-**Prompt:**
+**提示词:**
 ```
-Drone view of waves crashing against the rugged cliffs along Big Sur's garay point
-beach. The crashing blue waters create white-tipped waves, while the golden light
-of the setting sun illuminates the rocky shore. A small island with a lighthouse
-sits in the distance, and green shrubbery covers the cliff's edge. The steep drop
-from the road down to the beach is a dramatic feat, with the cliff's edges jutting
-out over the sea. This is a view that captures the raw beauty of the coast and the
-rugged landscape of the Pacific Coast Highway.
+无人机俯瞰大苏尔盖瑞角海滩,海浪拍打着崎岖的悬崖。碎裂的蓝色海水掀起白色浪花,而夕阳的金色光芒照亮了岩石海岸。远处有一座带灯塔的小岛,绿色灌木覆盖着悬崖边缘。从公路陡降至海滩是一项惊人的壮举,悬崖边缘突出于海面之上。这是一个捕捉海岸原始之美和太平洋海岸公路崎岖景观的视角。
 ```
 
-**Video Link:** [View Video](https://cdn.openai.com/sora/videos/big-sur.mp4)
+**视频链接:** [查看视频](https://cdn.openai.com/sora/videos/big-sur.mp4)
 
-**Source:** OpenAI Official
+**来源:** OpenAI 官方
 
-**Analysis:**
-- **Camera Work:** "Drone view" establishes aerial perspective and sweeping capability
-- **Dynamic Elements:** "Crashing waves" and "white-tipped waves" guide water physics
-- **Lighting:** "Golden light of the setting sun" creates warm, dramatic atmosphere
-- **Composition:** Multiple depth layers (cliffs, water, island, shrubbery)
-- **Physics Guidance:** Explicit wave behavior and light interaction
+**分析:**
+- **镜头运用:** "无人机俯瞰"确立了航拍视角和扫描能力
+- **动态元素:** "拍打的海浪"和"白色浪花"引导水物理特性
+- **光照:** "夕阳的金色光芒"创造温暖、戏剧性的氛围
+- **构图:** 多层深度(悬崖、水、岛屿、灌木)
+- **物理引导:** 明确的海浪行为和光线互动
 
-**Five Pillars:**
-| Pillar | Content |
+**五大支柱:**
+| 支柱 | 内容 |
 |--------|---------|
-| **Subject** | Coastal cliffs, waves, lighthouse island |
-| **Action** | Waves crashing, creating white tips |
-| **Environment** | Big Sur coastline, sunset, Pacific Coast Highway |
-| **Cinematic** | Drone view, aerial perspective |
-| **Aesthetic** | Photorealistic landscape with golden hour lighting |
+| **主体** | 海岸悬崖、海浪、灯塔岛 |
+| **动作** | 海浪拍打、形成白色浪尖 |
+| **环境** | 大苏尔海岸线、日落、太平洋海岸公路 |
+| **电影感** | 无人机视角、航拍透视 |
+| **美学** | 带黄金时刻光照的超写实风景 |
 
 ---
 
-### Ocean Storm
+### 海洋风暴
 
-**Prompt:**
+**提示词:**
 ```
-Cinematic footage of massive waves during a storm in the North Atlantic. Dark, turbulent
-waters rise into 30-foot swells, white foam and spray flying off the crests. Low,
-ominous clouds race overhead. Camera mounted on ship bow, rising and falling with the
-swells, creating visceral sense of power and danger. Shot on weatherproof cinema camera,
-high shutter speed captures water droplets frozen in mid-air. Dramatic, documentary-style
-cinematography emphasizing nature's raw power.
+北大西洋风暴中巨浪的电影镜头。黑暗湍流的海水升起30英尺的巨浪,白色泡沫和水花从浪尖飞溅。低矮阴沉的云层在头顶掠过。镜头安装在船头,随巨浪起伏,创造出力量和危险的真切感受。使用防水电影摄影机拍摄,高快门速度捕捉凝固在半空中的水滴。戏剧性的纪录片风格摄影,强调大自然的原始力量。
 ```
 
-**Prompt Type:** Precision Execution
+**提示词类型:** 精确执行
 
-**Key Techniques:**
-- Specific wave height (30-foot) provides scale reference
-- Weather integration (low clouds, spray)
-- Camera position specified (ship bow) for immersive POV
-- Technical specs (high shutter speed) for desired water capture
-- Mood guidance (power, danger, raw)
+**关键技巧:**
+- 具体的浪高(30英尺)提供尺度参考
+- 天气整合(低云、水花)
+- 指定镜头位置(船头)营造沉浸式POV
+- 技术规格(高快门速度)实现所需的水花捕捉
+- 情绪引导(力量、危险、原始)
 
 ---
 
-## Mountains & Nature
+## 山脉与自然
 
-### Snowy Mountain Range
+### 雪山山脉
 
-**Prompt:**
+**提示词:**
 ```
-Aerial drone shot soaring over a pristine mountain range at dawn. Fresh snow covers
-jagged peaks that catch the first pink and orange light of sunrise. Camera glides
-smoothly between peaks, revealing valleys filled with morning mist below. A frozen
-alpine lake reflects the colorful sky like a mirror. Pine trees at lower elevations
-are frosted with snow. Thin clouds drift between peaks. Cinematic, IMAX-quality
-landscape cinematography, shot on large format digital camera with exceptional clarity.
+航拍无人机在黎明飞越原始山脉。新雪覆盖着锯齿状山峰,捕捉日出的第一缕粉色和橙色光芒。镜头在山峰间平滑滑行,展现下方充满晨雾的山谷。一个结冰的高山湖泊像镜子一样反射着多彩的天空。低海拔的松树覆盖着霜雪。薄云在山峰间飘动。电影般的IMAX品质风景摄影,使用大画幅数字相机拍摄,具有卓越的清晰度。
 ```
 
-**Prompt Type:** Precision Execution
+**提示词类型:** 精确执行
 
-**Analysis:**
-- **Time Specification:** "Dawn" and "first light" create specific lighting conditions
-- **Movement:** "Glides smoothly between peaks" guides camera path
-- **Reflections:** Mirror lake provides physics instruction
-- **Atmospheric Elements:** Morning mist, thin clouds add depth and realism
-- **Quality Keywords:** "IMAX-quality," "large format" elevate production value
+**分析:**
+- **时间规格:** "黎明"和"第一缕光"创造特定的光照条件
+- **运动:** "在山峰间平滑滑行"引导镜头路径
+- **倒影:** 镜面湖泊提供物理指令
+- **大气元素:** 晨雾、薄云增加深度和真实感
+- **质量关键词:** "IMAX品质"、"大画幅"提升制作价值
 
 ---
 
-### Autumn Forest Path
+### 秋日林间小径
 
-**Prompt:**
+**提示词:**
 ```
-Steadicam shot gliding down a winding forest path in peak autumn. Trees ablaze with
-red, orange, and yellow foliage create a natural tunnel overhead. Fallen leaves carpet
-the ground in thick layers, some lifted by a gentle breeze swirling around the camera.
-Shafts of warm afternoon sunlight pierce through gaps in the canopy, illuminating
-floating leaves and creating volumetric light beams. Camera moves forward at walking
-pace, smooth and steady, inviting viewer to take a peaceful journey. Shot on 35mm film
-with rich, saturated fall colors.
+斯坦尼康镜头沿着秋色正浓的蜿蜒林间小径滑行。红色、橙色和黄色树叶如火焰般燃烧,在头顶形成自然的隧道。厚厚的落叶铺满地面,一些被轻柔的微风卷起,在镜头周围旋转。温暖的午后阳光从树冠的缝隙中射入,照亮漂浮的树叶并创造出体积光束。镜头以步行速度前进,平滑稳定,邀请观众进行一次平和的旅程。使用35mm胶片拍摄,呈现丰富饱和的秋日色彩。
 ```
 
-**Prompt Type:** Precision Execution
+**提示词类型:** 精确执行
 
-**Key Elements:**
-- Seasonal specificity (peak autumn)
-- Rich color description (red, orange, yellow)
-- Dynamic elements (breeze, floating leaves, light beams)
-- Camera movement (steadicam, walking pace)
-- Film stock and color direction
+**关键元素:**
+- 季节特定性(秋色正浓)
+- 丰富的色彩描述(红色、橙色、黄色)
+- 动态元素(微风、漂浮的树叶、光束)
+- 镜头运动(斯坦尼康、步行速度)
+- 胶片类型和色彩指导
 
 ---
 
-## Urban Landscapes
+## 城市景观
 
-### Tokyo Night Streets
+### 东京夜街
 
-**Prompt:**
+**提示词:**
 ```
-A stylish woman walks down a Tokyo street filled with warm glowing neon and animated
-city signage. She wears a black leather jacket, a long red dress, and black boots, and
-carries a black purse. She wears sunglasses and red lipstick. She walks confidently and
-casually. The street is damp and reflective, creating a mirror effect of the colorful
-lights. Many pedestrians walk about.
+一位时尚女性走在充满温暖霓虹灯和动态城市标牌的东京街头。她穿着黑色皮夹克、长红裙和黑色靴子,拎着黑色手袋。她戴着墨镜和红色口红。她自信而随意地行走。街道潮湿且反光,创造出彩色灯光的镜面效果。许多行人走来走去。
 ```
 
-**Video Link:** [View Video](https://cdn.openai.com/sora/videos/tokyo-walk.mp4)
+**视频链接:** [查看视频](https://cdn.openai.com/sora/videos/tokyo-walk.mp4)
 
-**Source:** OpenAI Official (The most iconic Sora prompt)
+**来源:** OpenAI 官方(最具标志性的Sora提示词)
 
-**Analysis:**
-This legendary prompt's success stems from:
-- **Sensory Details:** "warm glowing neon" sets color temperature
-- **Material Properties:** "damp and reflective" guides light physics
-- **Character Specificity:** Detailed clothing ensures consistency
-- **Environmental Depth:** Multiple layers (subject, pedestrians, signs, reflections)
-- **Implicit Physics:** Reflection effect provides surface and light behavior guidance
+**分析:**
+这个传奇提示词的成功源于:
+- **感官细节:** "温暖的霓虹灯光"设定色温
+- **材质属性:** "潮湿且反光"引导光物理
+- **角色特定性:** 详细的服装确保一致性
+- **环境深度:** 多层次(主体、行人、标牌、倒影)
+- **隐含物理:** 反射效果提供表面和光行为引导
 
 ---
 
-### New York City Rush Hour
+### 纽约市高峰时段
 
-**Prompt:**
+**提示词:**
 ```
-Time-lapse of New York City intersection during evening rush hour. Camera locked in
-high position looking down at busy crosswalk. Yellow taxis, pedestrians, cyclists all
-flow through frame in accelerated motion. Traffic lights cycle from red to green.
-Street lights turn on as sky transitions from blue hour to night. Long exposure effect
-creates light trails from vehicles. Urban energy and rhythm of the city compressed into
-dynamic time-lapse. Sharp focus throughout, deep depth of field showing entire scene.
+纽约市交叉路口晚高峰的延时摄影。镜头固定在高处俯瞰繁忙的人行横道。黄色出租车、行人、骑行者都以加速的运动流过画面。交通灯从红色循环到绿色。天空从蓝调时刻过渡到夜晚时,街灯亮起。长曝光效果创造出车辆的光轨。城市的能量和节奏被压缩进动态延时中。全程清晰对焦,大景深展现整个场景。
 ```
 
-**Prompt Type:** Creative Exploration
+**提示词类型:** 创意探索
 
-**Techniques:**
-- Time-lapse specification changes temporal dynamics
-- Static camera (locked position) for stability
-- Multiple moving elements (taxis, pedestrians, cyclists)
-- Light transition (blue hour to night)
-- Long exposure effect for light trails
+**技巧:**
+- 延时摄影规格改变时间动态
+- 静态镜头(固定位置)确保稳定性
+- 多个运动元素(出租车、行人、骑行者)
+- 光线过渡(蓝调时刻到夜晚)
+- 长曝光效果形成光轨
 
 ---
 
-## Aerial & Drone Views
+## 航拍与无人机视角
 
-### Vineyard Landscape
+### 葡萄园景观
 
-**Prompt:**
+**提示词:**
 ```
-Breathtaking drone shot rising over Tuscan vineyard at golden hour. Camera starts low
-between rows of grapevines, their leaves deep green and grapes hanging full. Slowly
-ascends while rotating, revealing geometric patterns of planted rows stretching to
-horizon. Medieval stone farmhouse and cypress trees come into view. Rolling hills in
-background catch warm sunset light. Shadows lengthen across the landscape. Smooth,
-cinematic drone operation with slow, majestic movement. Colors rich and saturated,
-emphasizing Mediterranean warmth.
+黄金时刻托斯卡纳葡萄园上空令人惊叹的无人机镜头升起。镜头从葡萄藤行间低处开始,深绿色的叶子和饱满的葡萄挂在枝头。缓慢上升的同时旋转,展现延伸到地平线的种植行几何图案。中世纪石制农舍和柏树进入视野。背景中的起伏山丘捕捉温暖的日落光芒。阴影在景观上延长。平滑的电影级无人机操作,缓慢而庄严的运动。色彩丰富饱和,强调地中海的温暖。
 ```
 
-**Prompt Type:** Precision Execution
+**提示词类型:** 精确执行
 
-**Analysis:**
-- **Camera Choreography:** Detailed movement (starts low, ascends, rotates)
-- **Geometric Elements:** Pattern recognition (planted rows)
-- **Cultural Context:** Tuscan/Mediterranean aesthetic
-- **Lighting:** Golden hour specification
-- **Movement Quality:** "Slow, majestic" guides pacing
+**分析:**
+- **镜头编排:** 详细的运动(从低处开始、上升、旋转)
+- **几何元素:** 图案识别(种植行)
+- **文化背景:** 托斯卡纳/地中海美学
+- **光照:** 黄金时刻规格
+- **运动质量:** "缓慢、庄严"引导节奏
 
 ---
 
-### Canyon Flight
+### 峡谷飞行
 
-**Prompt:**
+**提示词:**
 ```
-FPV drone racing through narrow slot canyon in American Southwest. Camera flies at
-high speed between towering red rock walls, banking and twisting to navigate tight
-passages. Shafts of sunlight pierce down from the narrow opening above. Smooth rock
-walls blur past with incredible speed. Camera occasionally looks up showing thin strip
-of blue sky between walls. Adrenaline-pumping, dynamic flight cinematography. High
-frame rate captures crisp motion. Colors vibrant - deep red rocks, bright blue sky.
+FPV无人机高速穿越美国西南部狭窄的峡谷。镜头在高耸的红岩墙之间高速飞行,倾斜和扭转以穿越狭窄的通道。阳光从上方狭窄的开口射下。光滑的岩壁以惊人的速度模糊掠过。镜头偶尔向上看,显示墙壁之间蓝天的细长条。肾上腺素飙升的动态飞行摄影。高帧率捕捉清晰的运动。色彩鲜艳 - 深红色岩石、明亮蓝天。
 ```
 
-**Prompt Type:** Precision Execution
+**提示词类型:** 精确执行
 
-**Key Elements:**
-- FPV (first-person view) specification
-- Speed indication ("high speed," "blur past")
-- Environmental interaction (navigating, banking, twisting)
-- Light conditions (shafts of sunlight)
-- Technical requirements (high frame rate)
+**关键元素:**
+- FPV(第一人称视角)规格
+- 速度指示("高速"、"模糊掠过")
+- 环境互动(穿越、倾斜、扭转)
+- 光照条件(阳光束)
+- 技术要求(高帧率)
 
 ---
 
-## Weather & Atmospheric
+## 天气与大气
 
-### Thunderstorm Rolling In
+### 雷暴来临
 
-**Prompt:**
+**提示词:**
 ```
-Wide cinematic shot of a massive thunderstorm approaching across flat Kansas prairie.
-Dark, menacing wall of clouds advances toward camera with visible rain curtain beneath.
-Lightning flashes illuminate the storm's interior with brief, intense bursts. Wind whips
-through tall prairie grass in foreground, creating waves of motion. Last rays of sunlight
-break through at horizon, creating dramatic contrast between dark storm and golden light.
-Time slightly accelerated to show storm's progression. Shot on cinema camera with ND
-filters, high contrast, documentary weather cinematography.
+堪萨斯平原上巨大雷暴接近的宽幅电影镜头。黑暗威胁的云墙朝镜头推进,下方可见雨幕。闪电照亮风暴内部,发出短暂而强烈的爆发。风在前景的高草原草丛中呼啸,创造出波浪般的运动。最后一缕阳光在地平线处穿透,在黑暗风暴和金色光芒之间创造戏剧性对比。时间略微加速以显示风暴的进展。使用带ND滤镜的电影摄影机拍摄,高对比度,纪录片天气摄影。
 ```
 
-**Prompt Type:** Precision Execution
+**提示词类型:** 精确执行
 
-**Analysis:**
-- **Scale and Threat:** "Massive" and "menacing" establish mood
-- **Dynamic Elements:** Lightning, wind, advancing clouds
-- **Contrast:** Dark storm vs. golden light
-- **Temporal:** "Slightly accelerated" changes time perception
-- **Technical Specs:** Cinema camera, ND filters for professional look
+**分析:**
+- **规模和威胁:** "巨大"和"威胁"确立情绪
+- **动态元素:** 闪电、风、推进的云
+- **对比:** 黑暗风暴 vs. 金色光芒
+- **时间:** "略微加速"改变时间感知
+- **技术规格:** 电影摄影机、ND滤镜营造专业外观
 
 ---
 
-### Morning Fog Valley
+### 晨雾山谷
 
-**Prompt:**
+**提示词:**
 ```
-Serene aerial shot of river valley filled with morning fog. Camera high above showing
-thick, white fog layer blanketing the valley floor like a cottony sea. Mountain peaks
-and hilltops poke through the fog layer like islands. Early morning sun creates soft,
-diffused light, edges of fog glowing golden. River barely visible as dark ribbon through
-the white. Complete stillness and tranquility. Slow, gentle camera movement floating
-peacefully above the scene. Meditative, ethereal quality. Colors muted and soft -
-whites, pale golds, soft blues.
+宁静的河谷航拍镜头,充满晨雾。镜头高高在上,展现厚厚的白色雾层像棉花般的海洋覆盖着谷底。山峰和山顶像岛屿一样穿透雾层。清晨的阳光创造柔和、漫射的光线,雾的边缘泛着金色。河流在白色中几乎看不见,像一条深色丝带。完全的静止和宁静。缓慢、温柔的镜头运动,平和地漂浮在场景上方。冥想般的空灵品质。色彩柔和 - 白色、淡金色、柔和的蓝色。
 ```
 
-**Prompt Type:** Creative Exploration
+**提示词类型:** 创意探索
 
-**Mood Keywords:**
-- Serene, stillness, tranquility, meditative, ethereal
-- These guide overall atmosphere while technical details ensure quality
+**情绪关键词:**
+- 宁静、静止、平和、冥想、空灵
+- 这些引导整体氛围,而技术细节确保质量
 
 ---
 
-## Tips for Hyperrealistic Landscapes
+## 超写实风景提示技巧
 
-### Do's ✅
+### 应该做的 ✅
 
-1. **Specify Lighting Conditions:** Golden hour, blue hour, overcast, harsh midday
-2. **Include Atmospheric Elements:** Fog, mist, dust, rain, snow
-3. **Define Camera Movement Precisely:** Speed, direction, smoothness
-4. **Add Dynamic Elements:** Wind, water, clouds, wildlife
-5. **Specify Film Stock or Digital Format:** 35mm, IMAX, cinema camera
-6. **Use Reference Locations:** Specific places help model understand aesthetic
-7. **Include Reflections and Shadows:** Guide light physics
+1. **指定光照条件:** 黄金时刻、蓝调时刻、阴天、正午强光
+2. **包含大气元素:** 雾、薄雾、尘埃、雨、雪
+3. **精确定义镜头运动:** 速度、方向、平滑度
+4. **添加动态元素:** 风、水、云、野生动物
+5. **指定胶片类型或数字格式:** 35mm、IMAX、电影摄影机
+6. **使用参考位置:** 特定地点帮助模型理解美学
+7. **包含倒影和阴影:** 引导光物理
 
-### Don'ts ❌
+### 不应该做的 ❌
 
-1. **Don't Forget Scale:** Without scale references, landscapes feel flat
-2. **Don't Ignore Time of Day:** Lighting drastically affects mood
-3. **Don't Use Static Descriptions:** Landscapes need movement (wind, water, camera)
-4. **Don't Overload with Detail:** Focus on 3-5 key elements maximum
-5. **Don't Forget Depth:** Foreground, midground, background create dimension
+1. **不要忘记尺度:** 没有尺度参考,风景会显得平面
+2. **不要忽略一天中的时间:** 光照极大影响情绪
+3. **不要使用静态描述:** 风景需要运动(风、水、镜头)
+4. **不要细节过载:** 最多专注于3-5个关键元素
+5. **不要忘记深度:** 前景、中景、背景创造维度
 
 ---
 
-**Related Guides:**
-- [Cinematic Techniques](../guides/cinematic-techniques.md) - Master camera work
-- [Getting Started](../guides/getting-started.md) - Basic prompt structure
-- [Official Prompts](./official-prompts.md) - Learn from OpenAI examples
-
+**相关指南:**
+- [电影技巧](../guides/cinematic-techniques.md) - 掌握镜头运用
+- [入门指南](../guides/getting-started.md) - 基础提示词结构
+- [官方提示词](./official-prompts.md) - 从OpenAI示例中学习
